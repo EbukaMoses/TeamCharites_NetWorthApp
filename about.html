@@ -5,12 +5,12 @@
     <title>Contact Us</title>
     <!-- Font awesome -->
     <!-- <link href="font-awesome.css" type='text/css' rel="stylesheet"> -->
-    <link href="css/animate.css" rel="stylesheet">
+    <!-- <link href="css/animate.css" rel="stylesheet"> -->
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet"type="text/css" href="css/about.css">
     
 
     <style>
@@ -44,6 +44,9 @@
 						<a class="nav-link" href="howto.html">TIPS</a>
 					</li>
                     <li class="nav-item">
+						<a class="nav-link" href="FAQ.html">FAQ</a>
+					</li>
+                    <li class="nav-item">
                         <a class="nav-link" href="signup.php">REGISTER</a>
                     </li>                
                     <li class="nav-item">
@@ -53,7 +56,6 @@
             </div>
         </div>
     </nav>
-
 
     <div class="container mt-5" class="animate-bottom">
         <div class="text-content">
@@ -69,7 +71,8 @@
 
                 <div class="col-md-6">
                     <h2 class="pt-3">Contact Us</h2>
-                    <form action="contact_mail.php" method="POST">
+                    <div class="form-messages"></div>
+                    <form action="contact.php" method="POST" id="form-contact">
                         <input type="text" class='field' name="name" placeholder="Your Name" required>
                         <input type="email" class="field" name="email" placeholder="Email Address" required>
                         <input type="text" class="field" name="number" placeholder="Telephone Number" required>
@@ -122,10 +125,9 @@
     <script src="js/jquery.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/contact.js"></script>
 
 </body>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-
-</html>
+</html> 
